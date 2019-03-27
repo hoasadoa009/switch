@@ -13,6 +13,11 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/owl.theme.default.min.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -37,5 +42,39 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- javascrip -->
+    <script type="text/javascript" src="%PUBLIC_URL%/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/js/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+  
+  $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    navText: ['<span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>','<span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+
+})
+    $(window).on('scroll',function(){
+      if($(window).scrollTop()){
+        $('header').addClass('bg-black')
+      }else{
+        $('header').removeClass('bg-black')
+      }
+    })
+  });
+</script>
   </body>
 </html>

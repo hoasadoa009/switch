@@ -31,3 +31,396 @@
     transform: rotate(360deg);
   }
 }
+.bg-black {
+  background: #54d154;
+  padding: .5rem;
+
+}
+
+.mt-60{
+  margin-top: 60px;
+}
+.mb-60{
+  margin-bottom: 60px;
+}
+.mb-6{
+  margin-bottom: 6rem
+}
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: 1s;
+}
+header .container-fuild .row{
+  margin: 0;
+}
+header .menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.activeMenu{
+  border-top: 4px solid #54d154;
+  font-weight: bold;
+}
+
+header .menu ul li{
+  display: inline-block;
+  transition: .5s
+
+}
+
+header .menu ul li a{
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #fff;
+}
+header .logo a{
+  text-decoration: none;
+  font-family: lobster;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #fff;
+}
+header .search form{
+  position: relative;
+}
+header .search form input{
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-sizing: content-box;
+  height: 27px;
+  padding:0 10px;
+}
+header .search form span{
+  position: absolute;
+  right: 3%;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./banner.jpg');
+  background-size: cover;
+  position: relative;
+  z-index: -1
+
+}
+.banner .banner__content{
+  position: absolute;
+  width: 100%;
+  line-height: 4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.banner .banner__content h1{
+  color: #fff;
+  font-size: 5em;
+}
+.banner .banner__content a{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  background: #54d154;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 1em
+}
+section#whatwedo, section#ourLatest,section#testimonials{
+  padding: 3.3rem 0;
+
+}
+section#whatwedo .content-sec1,
+section#ourLatest .content-sec1,
+section#testimonials .content-sec1,
+section#happyClient .content-sec1,
+section#meet .content-sec1{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+section#whatwedo .content-sec1 h2,section#testimonials .content-sec1 h2,
+section#happyClient .content-sec1 h2{
+  text-transform: uppercase;
+  color: #828181;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+section#whatwedo .content-sec1 h2:after,
+section#ourLatest .content-sec1 h2:after,
+section#testimonials .content-sec1 h2:after,
+section#happyClient .content-sec1 h2:after,
+section#meet .content-sec1 h2:after{
+  content: '';
+  display: block;
+  border: 1px solid #828181;
+  width: 7%;
+  text-align: center;
+  margin-left: 50%;
+  margin-top: 1%;
+  transform: translate(-50%,-50%);
+  font-family: 'Montserrat', sans-serif;
+
+}
+section#whatwedo .content-sec1 p,
+section#testimonials .content-sec1 p,
+section#happyClient .content-sec1 p{
+  color: #b7b3b3;
+}
+section .item{
+  border: none;
+
+}
+
+section .item .card-img img{
+  width: 50%;
+  max-height: 168px;
+  padding: 30px;
+  background: #e1f3e1;
+  border-radius: 35px;
+}
+section .item .card-body a{
+  background: #54d154;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  position: relative;
+}
+section .item .card-body a:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  filter: blur(10px);
+  background: #000;
+  opacity: 0;
+
+}
+section .item .card-body a:hover:before{
+  opacity: 1
+  
+}
+
+section .item .card-title{
+  color: #828181;
+}
+section .item .card-text{
+  color: #828181;
+  font-size: 1em
+}
+
+
+
+section#ourLatest,section#meet{
+  background: #54d154;
+}
+section#ourLatest .content-sec1 h2,
+section#meet .content-sec1 h2{
+  text-transform: uppercase;
+  color: #207b20;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+section#ourLatest .content-sec1 h2:after,
+section#meet .content-sec1 h2:after{
+  border: 1px solid #207b20;
+}
+section#ourLatest .content-sec1 p,
+section#meet .content-sec1 p {
+  color: #2b9b2b;
+}
+section#ourLatest .menuTab ul{
+  display: flex;
+  justify-content: center;
+}
+section#ourLatest .menuTab ul li a{
+  padding: 10px 19px;
+  color: #2b9b2b;
+  text-decoration: none;
+  border: 1px solid #2b9b2b;
+  background: #fff;
+}
+section#ourLatest .menuTab ul li a.activeMenuTab{
+  background: #2b9b2b;
+  color: #fff;
+  
+}
+section#ourLatest .menuTab ul li:first-child a{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  
+}
+section#ourLatest .menuTab ul li:last-child a{
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+}
+.tabcontent-item img{
+  width: 100%; height: 106px;
+}
+.btnOurLatest a{
+    text-decoration: none;
+    color: #fff;
+    background: #2b9b2b;
+    border-radius: 30px;
+    padding: 13px 18px;
+}
+section#testimonials .comment{
+  padding: 0 4rem;
+}
+section#testimonials .comment .comment__content p{
+  padding:0 4rem;
+  color: #444;
+}
+section#testimonials .comment .comment__author{
+  
+  
+  padding: 1rem 0;
+}
+section#testimonials .comment .comment__author img{
+  width: 60px;
+  height: 60px;
+  border: 3px solid #e1e1e1;
+  border-radius: 40px;
+  padding: .5rem;
+  margin-right: 1rem
+}
+section#testimonials .comment .comment__author p{
+  margin: 0;
+}
+section#testimonials .comment .comment__author span{
+  color: #ccc;
+  font-weight: bold;
+}
+section#testimonials .comment .owl-nav button.owl-prev{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #ccc;
+  font-size: 2rem
+}
+
+section#testimonials .comment .owl-nav button.owl-next{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  color: #ccc;
+  font-size: 2rem
+}
+section#testimonials .comment .owl-dots{
+  display: none;
+}
+section#happyClient{
+  background: #f2f1f1;
+  padding: 3.2rem 0;
+}
+section#happyClient .btnHappyClient a{
+  padding: .6em 1.5rem;
+  background: #dddcdc;
+  border: 1px solid #dddcdc;
+  border-radius: 30px;
+  color: #a59d9d;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+section#meet .contentMeet{
+  padding: 3.2rem 0;
+}
+section#meet .meetItem img.member{
+  
+  background: #fff;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+section#meet .meetItem .line{
+      width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+section#meet .meetItem .line .line1{
+  width: 50%;
+  transform: rotate(90deg);
+  border: 1px solid #207b20;
+  margin: 0 auto;
+ 
+}
+section#meet .meetItem p{
+  color: #fff;
+  font-size: 1.2em;
+}
+section#meet .meetItem label,
+section#contact label{
+  padding: .3rem .5rem;
+  background: #fff;
+  border-radius: 50px;
+}
+section#meet .meetItem label a,
+section#contact label a{
+  padding: 0 5px;
+}
+section#meet .meetItem label a:hover img,
+section#contact label a:hover img{
+  transform: scale(1.5,1.5);
+  transition: .5s
+}
+section#meet .btnMeet{
+  padding: 2rem 0;
+  background: #3eba3e;
+  text-align: center;
+}
+section#meet .btnMeet a{
+  padding: .6em 1.5rem;
+  color: #fff;
+  border-radius: 30px;
+  background: #54d154;
+  box-shadow: 5px 5px 10px #38a738;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+section#contact{
+  padding: 2rem;
+  background: #333;
+  color: #ccc;
+}
+section#contact h3{
+  text-transform: uppercase;
+}
+section#contact h3:after{
+  content: '';
+  display: block;
+  border: 1px solid #828181;
+  width: 10%;
+  text-align: center;
+  margin-left: 50%;
+  margin-top: 1%;
+  transform: translate(-50%,-50%);
+  font-family: 'Montserrat', sans-serif;
+}
+section#contact .listPorts ul li{
+  width: 100%;
+  margin-bottom: 12px;
+}
+section#contact .listPorts ul li a{
+    text-decoration: none;
+    color: #ccc;
+}
+section#contact .listPorts ul li a img{
+  width: 86px;
+  height: 57px;
+}
+section#contact .listPorts ul li a p{
+  margin-bottom: 2px;
+}
+section#contact .listPorts ul li a p:hover{
+  color: #717171;
+}
+section#contact .listPorts ul li a span{
+  /*padding: 5px;*/
+  color: #fff;
+  border-radius: 5px;
+}
